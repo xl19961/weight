@@ -286,12 +286,13 @@ void get_data_and_send(void)
 			pp = (unsigned char *) calloc (40,sizeof(unsigned char));
 			if(flag_state == 2)
 			{
-				if (light_sensor != 1){
+				if (light_sensor == 0){
 					amp = 0.0;
 				}else{
-					light_sensor = 0;
+					light_sensor--;
+					sprintf((char *)data_print,"%.2f\r\n",amp);
 				}
-				sprintf((char *)data_print,"%.2f\r\n",amp);
+			
 			}
 			else
 				{
