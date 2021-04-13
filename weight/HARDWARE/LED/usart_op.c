@@ -204,6 +204,7 @@ void USART_RecDeal(USART_TypeDef *USARTxD)
 					{
 					;
 					}
+
 				value_old = value_current ;
 				}
 			value_old = value_current;
