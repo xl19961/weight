@@ -24,7 +24,7 @@ void Flag_Deal(void)
 		}
 	}
 	if (PBin(14) == 0)
-		light_sensor = 2;
+		light_sensor = 1;
 
 }
 

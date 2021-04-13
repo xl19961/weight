@@ -296,7 +296,7 @@ void get_data_and_send(void)
 			}
 			else
 				{
-					if(i_con ==5)
+					if(i_con >= 5)
 					{
 						if(amp>2)
 						{
